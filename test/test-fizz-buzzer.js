@@ -46,5 +46,13 @@ describe('fizzBuzzer', function(){
 
     })
 
+    it('should return a number if it doesn\'t match a fizz buzz test and is also a number ', function(){
+        const normalCases = [7,11,13,17];
+        normalCases.forEach(function(input){
+            const answer = fizzBuzzer(input);
+            expect(answer).to.equal(input);
+        })
+    })
+
 
 })
